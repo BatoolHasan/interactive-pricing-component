@@ -26,7 +26,7 @@ function ContainerPageviews() {
             <div className="pageviews__grid">
                 <p className="pageviews">{pageviews} PAGEVIEWS</p>
                 <p className="price"><span>${(Math.round(price * 100) / 100).toFixed(2)}</span> / month</p>
-                <input type="range" min="0" max="4" value={currentRange} className="slider" onChange={handleChange} style={myStyle}></input>
+                <input type="range" min="0" max="4" value={currentRange} className="slider" onChange={handleChange} style={myStyle} title="pageviews and price slider"></input>
             </div>
             <div className="billing">
                 <span>Monthly <span>billing</span></span>
